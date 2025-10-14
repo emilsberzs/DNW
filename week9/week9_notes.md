@@ -1,0 +1,28 @@
+# Representing data in databases, Relational Databases, part 2
+## MySQL Installation on Windows
+- Installing:   
+    - Download installer https://dev.mysql.com/downloads/windows/
+    - Download the ZIP (will bw needed later to use basic MySQL client as in the videos)
+        - https://dev.mysql.com/downloads/mysql/  (ZIP archive)
+    - Run the installer (select developer option/Full)
+    - Configure the server (Allow it to start as a service)
+    - Connect via the workbench (the most user friendly way)
+        - Search 'MySQLWorkbench' in programs and launch
+        - Lower left side, click on MySQL Connections, eneter password
+        - Central window, top tab, 'Query 1', can start executing queries
+            - Type in query, Toolbar -> Query -> Execute Current Query
+    - Connect via the MySQL Shell:
+        - The new version of classic client
+        - Search 'MySQL Shell' in programs, run it
+        - **\\?** shows all available commands
+        - **\connect root@localhost**   connects as user 'root' to server running on local machine
+        - **\sql**    switches to SQL mode
+    - Connect via the classic client (mysql.exe)
+        - This is in the ZIP we downloaded earlier  
+            - mysql-9.4.0-winx64\mysql-9.4.0-winx64\bin\mysql.exe
+            - Has to be run in console
+                - PowerShell
+                - CD to mysql.exe folder
+                - **./mysql.exe -u root -p** 
+                - Enter password
+                - **show databases;**
