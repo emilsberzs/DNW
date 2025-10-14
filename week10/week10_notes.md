@@ -1,0 +1,35 @@
+# Basic Database operations-providing access to databases from middleware, part1
+## Basic SQL (uppercase optional)
+- SHOW DATABASES;
+    - lists all databases
+- USE database_name;
+    - switches to chosen database;
+- CREATE DATABASE database_name;
+- USE database_name;
+    - Switch to working with database
+- CREATE TABLE table_name (column TYPE,column TYPE, PRIMARY KEY(fieldname));
+- SHOW TABLES; 
+    - shows tables in current DB
+- DESCRIBE table_name;
+    - shows structure of table
+- INSERT INTO table_name (property1, property2, property3) VALUES (property1, property2, property3),(property1, property2, property3);
+- SELECT
+    - SELECT * FROM table_name LIMIT INTEGER;
+        - returns specified count of entries
+    - SELECT * FROM table_name WHERE property= or < or >value
+        - filters out only entries that match criteria
+- UPDATE 
+    - UPDATE table_name SET field_name1 = new_value1, field_name3 = new_value3;
+        - Updates all fieldnames if no WHERE clause provided
+    - UPDATE table_name SET field_name1 = new_value1, field_name3 = new_value3 WHERE fieldname = value;
+        - Updates specific field (usually by primary key/id)
+
+- DELETE FROM table_name;
+    - deletes all items in the table if no WHERE clause specified.
+- DELETE FROM table_name WHERE fieldname=<>value
+    - deletes specified row/rows
+- WHERE color LIKE 'Blue%'
+    - % is wildcard for zero, one or multiple characters, so 'Blue', 'Blue1', or 'Blue Jeans'
+- WHERE color LIKe 'gr_y'
+    - _ is wildcard for a single character, so would match both gray and grey
+- IS NULL mjst be used to catch a null field with WHERE clause, as comparison operators (=,<,>) won't work on it
