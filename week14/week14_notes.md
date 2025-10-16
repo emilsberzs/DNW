@@ -1,0 +1,12 @@
+# Preparing for Midterm assessment
+- Download template.
+    - Done, all in Midterm folder.
+- Read the **'README.md'** and **'Working with this template.pdf'**
+- Practice building apps with this template
+- Technology stack: 
+    - Node.js
+    - Express
+    - EJS
+    - SQLite **_(NOT MySQL)_**
+- Already followed README.md instructions and installed the packages.
+- Awaiting Midterm instructions (16.10.2025)
