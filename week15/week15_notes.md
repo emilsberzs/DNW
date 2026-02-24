@@ -58,7 +58,7 @@ the number of rows in each category. To achieve this, use the GROUP BY clause.
     - GROUP BY category;
 
 ## 8. Find the number of books per publisher:
--.../..................................................................................................................................................................................................................................l;; ;kkN=]]SELECT Publisher.name, COUNT(Book.id)
+- SELECT Publisher.name, COUNT(Book.id)
 FROM Book
 JOIN Publisher ON Book.publisher_id = Publisher.id
 GROUP BY Publisher.name;
