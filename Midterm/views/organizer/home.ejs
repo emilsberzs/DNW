@@ -1,0 +1,12 @@
+<h1>Organizer Dashboard</h1>
+
+<ul>
+    <% events.forEach(event => { %>
+        <li>
+            <strong><%= event.title %></strong>
+            <a href="/organizer/events/<%= event.event_id %>/edit">
+                Edit
+            </a>
+        </li>
+    <% }) %>
+</ul>
