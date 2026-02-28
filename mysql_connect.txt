@@ -1,0 +1,7 @@
+1. Check if MySql80 service is running.
+2. Run mysql shell.
+3. \connect root@localhost
+4. \sql
+5. show databases;
+6. use database_name;
+7. show tables;
